@@ -8,9 +8,9 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    const { HotelName, Categoria, Precio, Calificacion } = req.body;
+    const { Foto, HotelName, Categoria, Precio, Calificacion } = req.body;
 
-    if ( HotelName && Categoria && Precio && Calificacion ){
+    if ( Foto && HotelName && Categoria && Precio && Calificacion ){
         const HotelID = hoteles.length + 1;
         const newHotel = {HotelID, ...req.body};
         hoteles.push(newHotel);
@@ -33,11 +33,12 @@ router.delete('/:HotelID', (req, res) => {
 
 router.put('/:HotelID', (req, res) => {
     const { HotelID } = req.params;
-    const { HotelName, Categoria, Precio, Calificacion } = req.body;
+    const { Foto, HotelName, Categoria, Precio, Calificacion } = req.body;
 
-    if ( HotelName && Categoria && Precio && Calificacion ){
+    if ( Foto && HotelName && Categoria && Precio && Calificacion ){
         underscore.each(hoteles, (hotel, i) => {
             if (hotel.HotelID == HotelID){
+                hotel.Foto = Foto;
                 hotel.HotelName = HotelName;
                 hotel.Categoria = Categoria;
                 hotel.Precio = Precio;
