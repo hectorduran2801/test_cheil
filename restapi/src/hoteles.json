@@ -1,0 +1,35 @@
+[
+    {
+        "HotelID" : "1",
+        "Foto" : "https://www.decameron.com/images/thumbnail/jamaica/cornwal-03.jpg",
+        "HotelName" : "The Cameron",
+        "Categoria" : "5",
+        "Precio" : "200.00",
+        "Calificacion" : "4"
+    },
+    {
+        "HotelID" : "2",
+        "Foto" : "https://turismo.org/wp-content/uploads/2017/08/Burj-Al-Arab.jpg",
+        "HotelName" : "Hotel Dubai",
+        "Categoria" : "5",
+        "Precio" : "1500.00",
+        "Calificacion" : "5"
+    },
+    {
+        "HotelID" : "3",
+        "Foto" : "https://media-cdn.tripadvisor.com/media/photo-s/0e/72/68/b0/hotel-playa-blanca-beach.jpg",
+        "HotelName" : "Playa Blanca Resort",
+        "Categoria" : "3",
+        "Precio" : "100.00",
+        "Calificacion" : "3"
+    },
+    {
+        "HotelID" : "4",
+        "Foto" : "https://www.riu.com/blog/wp-content/uploads/2018/07/XLA_16_002-USP.jpg",
+        "HotelName" : "RIU",
+        "Categoria" : "5",
+        "Precio" : "100.00",
+        "Calificacion" : "5"
+    }
+
+]
